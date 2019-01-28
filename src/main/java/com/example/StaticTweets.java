@@ -33,7 +33,6 @@ public class StaticTweets {
     public Response getIt() {
 
     	final ChunkedOutput<String> output = new ChunkedOutput<String>(String.class);
-	search="";
     	runTask(output,null);
     	return Response.ok()
     			.entity(output)
